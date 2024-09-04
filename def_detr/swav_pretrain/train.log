@@ -1,0 +1,166 @@
+INFO - 12/08/22 01:51:04 - 0:00:00 - ============ Initialized logger ============
+INFO - 12/08/22 01:51:04 - 0:00:00 - arch: resnet50
+                                     base_lr: 0.6
+                                     batch_size: 16
+                                     checkpoint_freq: 2
+                                     crops_for_assign: [0, 1]
+                                     data_path: /home/ds6812/cvproj2/data/
+                                     dist_url: env://
+                                     dump_checkpoints: .\checkpoints
+                                     dump_path: .
+                                     epoch_queue_starts: 15
+                                     epochs: 100
+                                     epsilon: 0.05
+                                     feat_dim: 128
+                                     final_lr: 0.006
+                                     freeze_prototypes_niters: 5005
+                                     gpu_to_work_on: 0
+                                     hidden_mlp: 2048
+                                     is_slurm_job: False
+                                     local_rank: 0
+                                     max_scale_crops: [1.0, 0.14]
+                                     min_scale_crops: [0.14, 0.05]
+                                     nmb_crops: [2, 6]
+                                     nmb_prototypes: 3000
+                                     queue_length: 3840
+                                     rank: 0
+                                     seed: 31
+                                     sinkhorn_iterations: 3
+                                     size_crops: [256, 96]
+                                     start_warmup: 0
+                                     sync_bn: pytorch
+                                     syncbn_process_group_size: 8
+                                     temperature: 0.1
+                                     use_fp16: True
+                                     warmup_epochs: 0
+                                     wd: 1e-06
+                                     workers: 2
+                                     world_size: 1
+INFO - 12/08/22 01:51:04 - 0:00:00 - The experiment will be stored in .
+                                     
+
+INFO - 12/08/22 01:51:04 - 0:00:00 - Building data done with 2945 images loaded.
+INFO - 12/08/22 01:51:05 - 0:00:02 - ============ Starting epoch 0 ... ============
+INFO - 12/08/22 01:51:16 - 0:00:13 - Epoch: [0][0]	Time 10.959 (10.959)	Data 2.581 (2.581)	Loss 8.3662 (8.3662)	Lr: 0.6000
+INFO - 12/08/22 01:51:16 - 0:00:13 - Reducer buckets have been rebuilt in this iteration.
+INFO - 12/08/22 01:53:20 - 0:02:16 - Epoch: [0][50]	Time 6.212 (2.642)	Data 0.005 (0.051)	Loss 8.1182 (8.2207)	Lr: 0.6000
+INFO - 12/08/22 01:55:54 - 0:04:51 - Epoch: [0][100]	Time 5.849 (2.862)	Data 0.000 (0.027)	Loss 8.0334 (8.1909)	Lr: 0.6000
+INFO - 12/08/22 01:58:30 - 0:07:27 - Epoch: [0][150]	Time 7.869 (2.948)	Data 0.000 (0.019)	Loss 8.1400 (8.1868)	Lr: 0.5999
+INFO - 12/08/22 02:00:16 - 0:09:12 - ============ Starting epoch 1 ... ============
+INFO - 12/08/22 02:00:21 - 0:09:18 - Epoch: [1][0]	Time 5.366 (5.366)	Data 3.858 (3.858)	Loss 8.0350 (8.0350)	Lr: 0.5999
+INFO - 12/08/22 02:03:14 - 0:12:10 - Epoch: [1][50]	Time 1.373 (3.490)	Data 0.000 (0.077)	Loss 8.1529 (8.1262)	Lr: 0.5998
+INFO - 12/08/22 02:06:05 - 0:15:01 - Epoch: [1][100]	Time 1.553 (3.453)	Data 0.001 (0.041)	Loss 8.1355 (8.1181)	Lr: 0.5997
+INFO - 12/08/22 02:08:56 - 0:17:53 - Epoch: [1][150]	Time 3.665 (3.444)	Data 0.000 (0.028)	Loss 8.0389 (8.1125)	Lr: 0.5995
+INFO - 12/08/22 02:10:52 - 0:19:49 - ============ Starting epoch 2 ... ============
+INFO - 12/08/22 02:10:57 - 0:19:53 - Epoch: [2][0]	Time 4.441 (4.441)	Data 2.791 (2.791)	Loss 8.0599 (8.0599)	Lr: 0.5994
+INFO - 12/08/22 02:13:29 - 0:22:25 - Epoch: [2][50]	Time 1.347 (3.063)	Data 0.000 (0.057)	Loss 8.1477 (8.0906)	Lr: 0.5992
+INFO - 12/08/22 02:16:05 - 0:25:02 - Epoch: [2][100]	Time 1.400 (3.100)	Data 0.000 (0.029)	Loss 8.2156 (8.1205)	Lr: 0.5991
+INFO - 12/08/22 02:18:40 - 0:27:36 - Epoch: [2][150]	Time 2.703 (3.094)	Data 0.005 (0.020)	Loss 8.1415 (8.1130)	Lr: 0.5988
+INFO - 12/08/22 02:20:20 - 0:29:17 - ============ Starting epoch 3 ... ============
+INFO - 12/08/22 02:20:25 - 0:29:21 - Epoch: [3][0]	Time 4.682 (4.682)	Data 3.108 (3.108)	Loss 8.1253 (8.1253)	Lr: 0.5987
+INFO - 12/08/22 02:22:58 - 0:31:55 - Epoch: [3][50]	Time 2.836 (3.094)	Data 0.004 (0.064)	Loss 8.1885 (8.0900)	Lr: 0.5984
+INFO - 12/08/22 02:25:24 - 0:34:20 - Epoch: [3][100]	Time 1.467 (3.005)	Data 0.000 (0.034)	Loss 8.1419 (8.0911)	Lr: 0.5982
+INFO - 12/08/22 02:28:08 - 0:37:04 - Epoch: [3][150]	Time 1.777 (3.097)	Data 0.004 (0.023)	Loss 8.1575 (8.0855)	Lr: 0.5979
+INFO - 12/08/22 02:29:58 - 0:38:54 - ============ Starting epoch 4 ... ============
+INFO - 12/08/22 02:30:02 - 0:38:59 - Epoch: [4][0]	Time 4.813 (4.813)	Data 3.272 (3.272)	Loss 8.0315 (8.0315)	Lr: 0.5977
+INFO - 12/08/22 02:32:45 - 0:41:42 - Epoch: [4][50]	Time 1.491 (3.283)	Data 0.000 (0.065)	Loss 8.0946 (8.0734)	Lr: 0.5973
+INFO - 12/08/22 02:35:23 - 0:44:19 - Epoch: [4][100]	Time 5.079 (3.221)	Data 0.000 (0.033)	Loss 7.8861 (8.0692)	Lr: 0.5970
+INFO - 12/08/22 02:37:58 - 0:46:54 - Epoch: [4][150]	Time 3.066 (3.181)	Data 0.016 (0.024)	Loss 8.0641 (8.0687)	Lr: 0.5966
+INFO - 12/08/22 02:39:32 - 0:48:28 - ============ Starting epoch 5 ... ============
+INFO - 12/08/22 02:39:37 - 0:48:34 - Epoch: [5][0]	Time 5.886 (5.886)	Data 3.057 (3.057)	Loss 8.1664 (8.1664)	Lr: 0.5963
+INFO - 12/08/22 02:42:36 - 0:51:33 - Epoch: [5][50]	Time 2.141 (3.625)	Data 0.016 (0.062)	Loss 7.9952 (8.0638)	Lr: 0.5959
+INFO - 12/08/22 02:45:21 - 0:54:17 - Epoch: [5][100]	Time 4.413 (3.460)	Data 0.000 (0.032)	Loss 8.0873 (8.0537)	Lr: 0.5955
+INFO - 12/08/22 02:47:49 - 0:56:45 - Epoch: [5][150]	Time 3.560 (3.291)	Data 0.000 (0.022)	Loss 8.0801 (8.0523)	Lr: 0.5951
+INFO - 12/08/22 02:49:27 - 0:58:24 - ============ Starting epoch 6 ... ============
+INFO - 12/08/22 02:49:32 - 0:58:28 - Epoch: [6][0]	Time 4.388 (4.388)	Data 2.841 (2.841)	Loss 7.8529 (7.8529)	Lr: 0.5947
+INFO - 12/08/22 02:51:58 - 1:00:54 - Epoch: [6][50]	Time 1.522 (2.946)	Data 0.000 (0.057)	Loss 7.9445 (8.0324)	Lr: 0.5943
+INFO - 12/08/22 02:54:38 - 1:03:35 - Epoch: [6][100]	Time 1.328 (3.078)	Data 0.000 (0.030)	Loss 8.0575 (8.0673)	Lr: 0.5937
+INFO - 12/08/22 02:57:02 - 1:05:58 - Epoch: [6][150]	Time 1.500 (3.010)	Data 0.000 (0.020)	Loss 8.1204 (8.0681)	Lr: 0.5932
+INFO - 12/08/22 02:58:42 - 1:07:38 - ============ Starting epoch 7 ... ============
+INFO - 12/08/22 02:58:49 - 1:07:45 - Epoch: [7][0]	Time 6.722 (6.722)	Data 3.311 (3.311)	Loss 8.0561 (8.0561)	Lr: 0.5928
+INFO - 12/08/22 03:01:13 - 1:10:10 - Epoch: [7][50]	Time 2.418 (2.972)	Data 0.000 (0.068)	Loss 8.0446 (8.0830)	Lr: 0.5923
+INFO - 12/08/22 03:03:47 - 1:12:43 - Epoch: [7][100]	Time 3.640 (3.016)	Data 0.000 (0.035)	Loss 7.9828 (8.0734)	Lr: 0.5917
+INFO - 12/08/22 03:06:23 - 1:15:19 - Epoch: [7][150]	Time 1.338 (3.051)	Data 0.000 (0.024)	Loss 8.0483 (8.0665)	Lr: 0.5911
+INFO - 12/08/22 03:08:03 - 1:16:59 - ============ Starting epoch 8 ... ============
+INFO - 12/08/22 03:08:07 - 1:17:04 - Epoch: [8][0]	Time 4.283 (4.283)	Data 2.808 (2.808)	Loss 8.0268 (8.0268)	Lr: 0.5907
+INFO - 12/08/22 03:10:25 - 1:19:22 - Epoch: [8][50]	Time 4.710 (2.794)	Data 0.014 (0.056)	Loss 7.9892 (8.0351)	Lr: 0.5900
+INFO - 12/08/22 03:13:01 - 1:21:58 - Epoch: [8][100]	Time 4.743 (2.954)	Data 0.016 (0.029)	Loss 8.0837 (8.0580)	Lr: 0.5894
+INFO - 12/08/22 03:15:24 - 1:24:21 - Epoch: [8][150]	Time 3.482 (2.923)	Data 0.000 (0.020)	Loss 8.1603 (8.0459)	Lr: 0.5887
+INFO - 12/08/22 03:17:07 - 1:26:03 - ============ Starting epoch 9 ... ============
+INFO - 12/08/22 03:17:14 - 1:26:10 - Epoch: [9][0]	Time 6.746 (6.746)	Data 2.934 (2.934)	Loss 7.9830 (7.9830)	Lr: 0.5882
+INFO - 12/08/22 03:19:49 - 1:28:46 - Epoch: [9][50]	Time 2.901 (3.181)	Data 0.000 (0.059)	Loss 8.0179 (8.0012)	Lr: 0.5875
+INFO - 12/08/22 03:22:28 - 1:31:25 - Epoch: [9][100]	Time 3.213 (3.184)	Data 0.000 (0.031)	Loss 7.9869 (8.0105)	Lr: 0.5868
+INFO - 12/08/22 03:25:09 - 1:34:05 - Epoch: [9][150]	Time 3.640 (3.193)	Data 0.000 (0.021)	Loss 8.1256 (8.0063)	Lr: 0.5860
+INFO - 12/08/22 03:26:43 - 1:35:39 - ============ Starting epoch 10 ... ============
+INFO - 12/08/22 03:27:09 - 0:00:00 - ============ Initialized logger ============
+INFO - 12/08/22 03:27:09 - 0:00:00 - arch: resnet50
+                                     base_lr: 0.6
+                                     batch_size: 16
+                                     checkpoint_freq: 2
+                                     crops_for_assign: [0, 1]
+                                     data_path: /home/ds6812/cvproj2/data/
+                                     dist_url: env://
+                                     dump_checkpoints: .\checkpoints
+                                     dump_path: .
+                                     epoch_queue_starts: 15
+                                     epochs: 15
+                                     epsilon: 0.05
+                                     feat_dim: 128
+                                     final_lr: 0.006
+                                     freeze_prototypes_niters: 5005
+                                     gpu_to_work_on: 0
+                                     hidden_mlp: 2048
+                                     is_slurm_job: False
+                                     local_rank: 0
+                                     max_scale_crops: [1.0, 0.14]
+                                     min_scale_crops: [0.14, 0.05]
+                                     nmb_crops: [2, 6]
+                                     nmb_prototypes: 3000
+                                     queue_length: 3840
+                                     rank: 0
+                                     seed: 31
+                                     sinkhorn_iterations: 3
+                                     size_crops: [256, 96]
+                                     start_warmup: 0
+                                     sync_bn: pytorch
+                                     syncbn_process_group_size: 8
+                                     temperature: 0.1
+                                     use_fp16: True
+                                     warmup_epochs: 0
+                                     wd: 1e-06
+                                     workers: 2
+                                     world_size: 1
+INFO - 12/08/22 03:27:09 - 0:00:00 - The experiment will be stored in .
+                                     
+
+INFO - 12/08/22 03:27:09 - 0:00:00 - Building data done with 2945 images loaded.
+INFO - 12/08/22 03:27:11 - 0:00:02 - Found checkpoint at .\checkpoint.pth.tar
+INFO - 12/08/22 03:27:11 - 0:00:02 - => loaded state_dict from checkpoint '.\checkpoint.pth.tar'
+INFO - 12/08/22 03:27:11 - 0:00:02 - => loaded optimizer from checkpoint '.\checkpoint.pth.tar'
+INFO - 12/08/22 03:27:11 - 0:00:02 - => loaded amp from checkpoint '.\checkpoint.pth.tar'
+INFO - 12/08/22 03:27:11 - 0:00:02 - ============ Starting epoch 10 ... ============
+INFO - 12/08/22 03:27:22 - 0:00:13 - Epoch: [10][0]	Time 11.008 (11.008)	Data 2.604 (2.604)	Loss 8.0125 (8.0125)	Lr: 0.1545
+INFO - 12/08/22 03:27:22 - 0:00:13 - Reducer buckets have been rebuilt in this iteration.
+INFO - 12/08/22 03:29:36 - 0:02:27 - Epoch: [10][50]	Time 3.444 (2.835)	Data 0.016 (0.053)	Loss 7.9780 (8.0075)	Lr: 0.1401
+INFO - 12/08/22 03:32:01 - 0:04:52 - Epoch: [10][100]	Time 4.488 (2.869)	Data 0.000 (0.027)	Loss 7.9874 (7.9949)	Lr: 0.1262
+INFO - 12/08/22 03:34:25 - 0:07:16 - Epoch: [10][150]	Time 1.618 (2.874)	Data 0.000 (0.019)	Loss 8.1159 (7.9868)	Lr: 0.1130
+INFO - 12/08/22 03:36:06 - 0:08:56 - ============ Starting epoch 11 ... ============
+INFO - 12/08/22 03:36:10 - 0:09:01 - Epoch: [11][0]	Time 4.424 (4.424)	Data 2.902 (2.902)	Loss 7.8683 (7.8683)	Lr: 0.1043
+INFO - 12/08/22 03:38:38 - 0:11:28 - Epoch: [11][50]	Time 1.555 (2.978)	Data 0.000 (0.058)	Loss 7.9798 (7.9407)	Lr: 0.0920
+INFO - 12/08/22 03:41:05 - 0:13:56 - Epoch: [11][100]	Time 3.793 (2.968)	Data 0.000 (0.030)	Loss 7.9890 (7.9494)	Lr: 0.0805
+INFO - 12/08/22 03:43:34 - 0:16:25 - Epoch: [11][150]	Time 1.627 (2.969)	Data 0.000 (0.021)	Loss 7.9480 (7.9458)	Lr: 0.0697
+INFO - 12/08/22 03:45:17 - 0:18:07 - ============ Starting epoch 12 ... ============
+INFO - 12/08/22 03:45:21 - 0:18:12 - Epoch: [12][0]	Time 4.485 (4.485)	Data 2.934 (2.934)	Loss 7.8829 (7.8829)	Lr: 0.0627
+INFO - 12/08/22 03:47:49 - 0:20:40 - Epoch: [12][50]	Time 2.148 (2.990)	Data 0.000 (0.059)	Loss 7.9494 (7.9473)	Lr: 0.0532
+INFO - 12/08/22 03:50:20 - 0:23:11 - Epoch: [12][100]	Time 1.459 (3.005)	Data 0.000 (0.031)	Loss 8.0032 (7.9333)	Lr: 0.0444
+INFO - 12/08/22 03:52:51 - 0:25:41 - Epoch: [12][150]	Time 3.966 (3.007)	Data 0.000 (0.022)	Loss 8.0236 (7.9308)	Lr: 0.0366
+INFO - 12/08/22 03:54:35 - 0:27:26 - ============ Starting epoch 13 ... ============
+INFO - 12/08/22 03:54:39 - 0:27:30 - Epoch: [13][0]	Time 4.361 (4.361)	Data 2.840 (2.840)	Loss 7.8746 (7.8746)	Lr: 0.0317
+INFO - 12/08/22 03:57:00 - 0:29:50 - Epoch: [13][50]	Time 1.344 (2.835)	Data 0.000 (0.058)	Loss 7.9348 (7.9148)	Lr: 0.0252
+INFO - 12/08/22 03:59:35 - 0:32:26 - Epoch: [13][100]	Time 1.517 (2.973)	Data 0.000 (0.031)	Loss 8.0525 (7.9180)	Lr: 0.0197
+INFO - 12/08/22 04:02:02 - 0:34:53 - Epoch: [13][150]	Time 3.813 (2.963)	Data 0.000 (0.021)	Loss 7.9409 (7.9135)	Lr: 0.0151
+INFO - 12/08/22 04:03:49 - 0:36:39 - ============ Starting epoch 14 ... ============
+INFO - 12/08/22 04:03:53 - 0:36:44 - Epoch: [14][0]	Time 4.393 (4.393)	Data 2.745 (2.745)	Loss 7.9620 (7.9620)	Lr: 0.0125
+INFO - 12/08/22 04:06:12 - 0:39:03 - Epoch: [14][50]	Time 1.502 (2.810)	Data 0.000 (0.055)	Loss 8.0241 (7.9176)	Lr: 0.0094
+INFO - 12/08/22 04:08:45 - 0:41:36 - Epoch: [14][100]	Time 3.762 (2.934)	Data 0.000 (0.029)	Loss 7.9815 (7.9205)	Lr: 0.0074
+INFO - 12/08/22 04:11:07 - 0:43:57 - Epoch: [14][150]	Time 1.395 (2.901)	Data 0.000 (0.020)	Loss 7.9850 (7.9206)	Lr: 0.0062
